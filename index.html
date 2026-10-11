@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Darlo 💖</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <div class="stars" aria-hidden="true"></div>
+
+  <main>
+    <!-- PAGE 1: WELCOME -->
+    <section id="home" class="page hero">
+      <div class="eyebrow">✨ A little magic, made for you ✨</div>
+      <div class="gift" aria-hidden="true">🎁</div>
+      <h1>Happy Birthday <span>Darlo!</span></h1>
+      <p class="subtitle">Today, the universe celebrates someone truly special.</p>
+      <button id="surpriseBtn" class="primary-button">Open Your Surprise 💝</button>
+      <p id="message" class="message" aria-live="polite"></p>
+      <p class="hint">Your magical day is waiting…</p>
+    </section>
+
+    <!-- PAGE 2: COUNTDOWN -->
+    <section id="countdownSection" class="page section" hidden>
+      <p class="eyebrow">🌙 The magic is getting closer</p>
+      <h2>Countdown to <span>Your Day</span></h2>
+      <div class="countdown">
+        <div class="time-card"><strong id="days">0</strong><span>Days</span></div>
+        <div class="time-card"><strong id="hours">0</strong><span>Hours</span></div>
+        <div class="time-card"><strong id="minutes">0</strong><span>Minutes</span></div>
+        <div class="time-card"><strong id="seconds">0</strong><span>Seconds</span></div>
+      </div>
+      <p id="birthdayStatus" class="birthday-status" aria-live="polite"></p>
+      <button id="countdownContinue" class="primary-button">Unlock Your Memories ✨</button>
+    </section>
+
+    <!-- PAGE 3: FLOATING PHOTO GALLERY -->
+    <section id="memories" class="page section" hidden>
+      <p class="eyebrow">📸 Little moments, endless love</p>
+      <h2>Our Magical <span>Memories</span></h2>
+      <p class="section-description">Every picture holds a little piece of happiness.</p>
+
+      <div class="polaroid-gallery">
+        <button class="polaroid" type="button" data-photo="images/darlo1.jpg" aria-label="Open photo 1">
+          <img src="images/darlo1.jpg" alt="Darlo memory 1">
+          <span>My favourite smile 💗</span>
+        </button>
+        <button class="polaroid" type="button" data-photo="images/darlo2.jpg" aria-label="Open photo 2">
+          <img src="images/darlo2.jpg" alt="Darlo memory 2">
+          <span>A beautiful moment ✨</span>
+        </button>
+        <button class="polaroid" type="button" data-photo="images/darlo3.jpg" aria-label="Open photo 3">
+          <img src="images/darlo3.jpg" alt="Darlo memory 3">
+          <span>Forever precious 🌷</span>
+        </button>
+        <button class="polaroid" type="button" data-photo="images/darlo4.jpg" aria-label="Open photo 4">
+          <img src="images/darlo4.jpg" alt="Darlo memory 4">
+          <span>Made with love 💖</span>
+        </button>
+      </div>
+
+      <button id="memoriesContinue" class="primary-button">Open Your Birthday Letter 💌</button>
+    </section>
+
+    <!-- FULLSCREEN PHOTO VIEWER -->
+    <div id="photoLightbox" class="lightbox" hidden role="dialog" aria-modal="true" aria-label="Photo viewer">
+      <button id="closePhoto" class="close-photo" type="button" aria-label="Close photo">✕</button>
+      <img id="largePhoto" src="" alt="Selected Darlo memory">
+    </div>
+
+    <!-- PAGE 4: LETTER -->
+    <section id="birthdayLetter" class="page section letter-section" hidden>
+      <p class="eyebrow">💌 A little letter from the heart</p>
+      <h2>For You, <span>Darlo</span></h2>
+      <div class="letter-card">
+        <p>Dear Darlo,</p>
+        <p>
+          ❤️🥹✨ **Happiest Birthday to My Sister, My Second Mother, My Safe Place & My Forever Person!** 🎂🫶🏻💗
+
+Happy Birthday meri jaan, meri badi behen, meri favourite person! 🥹❤️🎀
+
+Pata hai, kabhi-kabhi mujhe lagta hai ki life mein kuch rishte hum khud nahi chunte, bas bhagwan unhe hamari life mein bhej deta hai, kyunki unhe pata hota hai ki humein kis insaan ki zaroorat hai. Aur tu meri life mein unhi khoobsurat rishton mein se ek hai. ❤️🫂
+
+Aaj tera birthday hai, toh main tujhe batana chahti hoon ki tu mere liye kitni zyada special hai. Hum mile toh sirf friends ki tarah the, lekin pata hi nahi chala kab ye dosti ek aise rishte mein badal gayi jahan tu meri dost se badhkar meri badi behen ban gayi. Aaj tujhe sirf apni friend kehna mere liye kaafi nahi hai, kyunki tu mere liye usse kahin zyada hai. Tu meri woh badi behen hai jiske saamne main bina kuch kahe bhi apna dard rakh sakti hoon, jo meri khamoshi ko samajhne ki koshish karti hai aur jo mujhe sirf meri khushi mein nahi, balki mere bure waqt mein bhi utne hi pyaar se treat karti hai. 🥹❤️
+
+**It's been 7 beautiful years of our friendship, and honestly, these 7 years have given me a bond that I never want to lose.** 🧿💗 Saat saal pehle shayad humne kabhi socha bhi nahi hoga ki ek din hum ek-doosre ke liye itne important ban jayenge. Lekin aaj tu meri life ka woh hissa hai jise main kabhi kisi bhi situation mein khona nahi chahti. Hamara rishta sirf saath hasne, baatein karne aur masti karne tak limited nahi hai. Is rishte mein pyaar hai, trust hai, care hai, understanding hai, chhoti-moti nok-jhok hai, gussa hai, manana hai aur sabse zyada ek-doosre ke liye woh jagah hai jo har kisi ko nahi milti. 🫶🏻❤️
+
+Tu jaanti hai, main kabhi-kabhi chup ho jaati hoon, apne andar bahut kuch rakh leti hoon aur har baar apni feelings ko words mein explain nahi kar paati. Lekin tune mujhe jis tarah treat kiya hai, woh mere liye bahut maayne rakhta hai. Jab main dukhi hoti hoon, jab mera mood theek nahi hota, jab main khud nahi samajh paati ki mujhe kya ho raha hai, tab bhi tune mujhe pyaar aur apnapan diya hai. Tune mujhe kabhi aisa feel nahi karaya ki mujhe har baar apna dard explain karke hi care deserve karni hai. 🥺❤️
+
+**Sometimes, you don't even realise it, but the way you care for me feels just like a mother.** 🫂💗 Tera daantna, samjhana, meri fikr karna, meri galtiyon par mujhe tokna aur phir bhi mujhe apna samajhna, ye sab mere liye bahut precious hai. Tere andar mujhe ek badi behen ka pyaar bhi milta hai aur ek maa jaisi mamta bhi. Aur sach kahun, toh har kisi ko life mein aisa insaan nahi milta jiske saamne woh apni kamzori dikhane se dare nahi, jo use judge karne ke bajaye samajhne ki koshish kare. Main khushnaseeb hoon ki mujhe tu mili. 🥹🧿❤️
+
+Aur haan madam ji! 😂❤️ Hamari fights, hamare chhote-chhote jhagde, ek-doosre se roothna, faltu ki nok-jhok, ek-doosre ko tang karna aur phir aise behave karna jaise kuch hua hi nahi — ye sab bhi toh hamare rishte ka ek important part hai! 😂😭💗 Kabhi tu mujhe pareshan karti hai, kabhi main tujhe, kabhi teri baat buri lag jaati hai aur kabhi meri baaton se tu irritate ho jaati hai. Lekin in sab ke beech jo cheez hamesha special rahi hai, woh hai hamara bond. Kyunki apne logon se hi toh itna ladne, ruthne aur phir unhi ke paas laut aane ka haq hota hai. ❤️🫂
+
+Mere liye hamari friendship ki sabse khoobsurat baat ye hai ki hum sirf achhe waqt ke partners nahi rahe. Hamare beech ek aisa trust bana hai jahan mujhe pata hai ki tu mere liye kitni important hai aur main bhi tere liye apni jagah rakhti hoon. Main chahti hoon ki chahe hum kitne bhi busy ho jaayein, chahe life humein kitni bhi alag directions mein le jaaye, hamare beech ka ye apnapan kabhi kam na ho. Saalon baad bhi hum aise hi ek-doosre se baatein karein, ek-doosre ki problems sunein, bewajah hasein, chhoti-chhoti baaton par ladein aur phir ek-doosre ko mana bhi lein. 🥹💞
+
+**You're not just someone I've known for seven years; you're someone who has become a part of my heart and my life.** ❤️✨
+
+Main shayad har baar tujhe bata nahi paati ki main teri kitni respect karti hoon, tu mere liye kitni मायने रखती hai aur main tere pyaar aur care ko kitna appreciate karti hoon. Lekin aaj tere birthday par main chahti hoon ki tu ye sab jaan le. Thank you meri life mein hone ke liye. Thank you mujhe samajhne ki koshish karne ke liye. Thank you meri khamoshi, mere mood swings, meri bachkani harkatein aur meri faltu ki baatein tolerate karne ke liye. 😂❤️ Thank you mujhe apna samajhne ke liye, mujhe care karne ke liye aur mujhe woh pyaar dene ke liye jo ek chhoti behen apni badi behen se expect karti hai. 🫂🎀
+
+Main dil se chahti hoon ki teri life mein kabhi pyaar ki kami na ho, tujhe hamesha woh respect mile jiski tu haqdar hai, tere saare sapne poore hon aur tu life mein har woh khushi paaye jiske liye tera dil tarasta hai. Tere chehre ki smile kabhi kam na ho. Jab bhi tu thak jaaye, tujhe aaram mile. Jab bhi tu dukhi ho, tujhe koi aisa mile jo tujhe samjhe. Jab bhi tu khud ko akela mehsoos kare, tujhe yaad rahe ki teri life mein ek aisi chhoti behen hai jo tujhse dil se judi hui hai aur jo hamesha tere liye achha hi chahegi. ❤️🧿
+
+Aur sun, hamesha sabke liye strong bante-bante khud ka khayal rakhna mat bhool jaana. Tu bhi kabhi thak sakti hai, tu bhi kabhi ro sakti hai aur tujhe bhi kabhi kisi ke support ki zaroorat ho sakti hai. Har baar sabko sambhalne wali meri badi behen ko bhi kabhi sambhalne ke liye kisi ki zaroorat pade, toh please yaad rakhna ki main hoon. Shayad main har problem solve na kar paaun, shayad har baar sahi advice na de paaun, lekin main teri baat sunne, tujhe samajhne aur tere saath khade rehne ki poori koshish zaroor karungi. Kyunki tu mere liye sirf woh insaan nahi hai jo meri care karta hai, tu woh insaan hai jiski care karna bhi mere liye utna hi important hai. 🥹❤️🫂
+
+**Happy Birthday once again, meri pyaari si badi behen!** 🎂👑💗
+
+Saat saal ki dosti se shuru hua ye safar zindagi bhar ke rishte mein badal jaaye, bas yahi dua hai meri. Hamara bond hamesha aisa hi rahe — thoda crazy, thoda emotional, thoda dramatic, bahut saara pyaar, dher saari nok-jhok aur ek-doosre ke liye beintehaa care ke saath. 😂😭❤️
+
+I hope life gives you a thousand reasons to smile, a million moments to feel loved and endless happiness that stays with you forever. May Mahadev always bless you, protect you from every negativity and give you all the happiness your heart deserves. Har buri nazar se bachi rahe meri jaan. 🧿🙏🏻❤️
+
+**And no matter how old we grow, how much life changes or how many years pass, I hope I will always have the privilege of calling you my badi behen.** 🥹🫶🏻💗
+
+Tu meri friend bankar aayi thi, lekin aaj meri family jaisi hai. Rishta khoon ka nahi hai, par dil se juda hua hai, aur mere liye ye kisi bhi blood relation se kam nahi. Thank you for these seven years of love, care, trust, fights, laughter and beautiful memories. Here's to many more years of us, growing together, annoying each other, supporting each other and loving each other like sisters. ♾️❤️🫂
+
+**I LOVE YOU SO MUCH, MERI BADI BEHEN!** 🥹❤️🎀
+
+Once again, happiest birthday to the woman who has given me the warmth of a mother's love, the guidance of an elder sister and the comfort of a best friend. May you always be as happy as you make the people around you. You deserve all the love in this world and so much more. ❤️👑✨
+
+**You're not my sister by blood, but you're my sister by heart, and that's a bond I'll cherish forever.** 🫂💗♾️
+
+🎂❤️ **HAPPY BIRTHDAY, MERI JAAN!** ❤️🎂
+
+*7 years of friendship, a lifetime of sisterhood. Always you, always us.* 🧿🫶🏻♾️💗
+        </p>
+        <p>Happy Birthday, Darlo! 🎂💖</p>
+        <p class="signature">Made with lots of love ✨</p>
+      </div>
+      <button id="letterBtn" class="primary-button">One Last Surprise 💖</button>
+      <p id="letterMessage" class="message" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer>Made with 💖 especially for Darlo</footer>
+
+</body>
+</html>
